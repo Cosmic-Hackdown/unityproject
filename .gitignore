@@ -80,3 +80,6 @@ Cosmic Hackdown/Library/Bee/artifacts/1900b0aE.dag/post-processed/PsdPlugin.dll
 *.rsp2
 
 Cosmic Hackdown/Library/ArtifactDB
+
+# ignore ALL files in ANY directory named temp
+temp/
