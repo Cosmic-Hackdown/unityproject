@@ -83,3 +83,4 @@ Cosmic Hackdown/Library/ArtifactDB
 
 # ignore ALL files in ANY directory named temp
 temp/
+*.log
