@@ -2,7 +2,7 @@
 #
 # Get latest from https://github.com/github/gitignore/blob/main/Unity.gitignore
 #
-/[Ll]ibrary/
+[Ll]ibrary/
 /[Tt]emp/
 /[Oo]bj/
 /[Bb]uild/
@@ -71,3 +71,17 @@ crashlytics-build.properties
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
 Cosmic Hackdown/Library/PackageCache/com.unity.burst@1.8.11/.Runtime/libburst-llvm-15.dylib
+Cosmic Hackdown/Library/ArtifactDB
+Cosmic Hackdown/Library/Artifacts/00/007a545b0276acb2ead68709796e0e7c
+Cosmic Hackdown/Library/Artifacts/5d/5d40f5d819648465f776881fd2b435b2
+Cosmic Hackdown/Library/Bee/artifacts/1900b0aE.dag/post-processed/PsdPlugin.dll
+*.dll
+*.rsp
+*.rsp2
+
+Cosmic Hackdown/Library/ArtifactDB
+
+# ignore ALL files in ANY directory named temp
+temp/
+*.log
+*.dwlt
