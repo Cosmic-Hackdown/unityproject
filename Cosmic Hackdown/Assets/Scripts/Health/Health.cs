@@ -9,6 +9,7 @@ public class Health : MonoBehaviour
     public float currentHealth{ get; private set; }
 
     private Animator anim;
+    private bool dead;
 
     // Start is called before the first frame update and I think awake is called even before that?
     void Awake()
@@ -30,9 +31,18 @@ public class Health : MonoBehaviour
         if(currentHealth > 0) {
             //player hurt
             anim.SetTrigger("hurt");
+            //iframes
         } else {
-            //player dies
+
+            if(!dead) {
+
+                 //player dies
             anim.SetTrigger("die");
+            GetComponent<PlayerMovement>().enabled = false;
+            dead = true;
+
+            }
+           
         }
     }
 
