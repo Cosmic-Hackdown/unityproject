@@ -12,14 +12,14 @@ public class Health : MonoBehaviour
     private bool dead;
 
     // Start is called before the first frame update and I think awake is called even before that?
-    void Awake()
+    private void Awake()
     {
         currentHealth = startingHealth;
         anim = GetComponent<Animator>();
         
     }
 
-    void TakeDamage(float _damage)
+    public void TakeDamage(float _damage)
     {
         /*
         Mathf.Clamp(float value, float min, float max)
