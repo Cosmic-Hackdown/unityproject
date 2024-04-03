@@ -36,6 +36,14 @@ public class Health : MonoBehaviour
         }
     }
 
+/*
+// This is just for testing purposes
+    private void Update() {
+        if(Input.GetKeyDown(KeyCode.E)) {
+            TakeDamage(1);
+        }
+    }
+*/
 
    
 }
