@@ -4870,6 +4870,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5516226486218235928, guid: 8179f7343c097b74bada9b4f7336c0a2, type: 3}
+      propertyPath: m_Size.x
+      value: 0.38654995
+      objectReference: {fileID: 0}
+    - target: {fileID: 5516226486218235928, guid: 8179f7343c097b74bada9b4f7336c0a2, type: 3}
+      propertyPath: m_Size.y
+      value: 0.4913665
+      objectReference: {fileID: 0}
+    - target: {fileID: 5516226486218235928, guid: 8179f7343c097b74bada9b4f7336c0a2, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.037373066
+      objectReference: {fileID: 0}
+    - target: {fileID: 5516226486218235928, guid: 8179f7343c097b74bada9b4f7336c0a2, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.0064436793
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6770,7 +6786,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 479, y: -140.00003}
+  m_AnchoredPosition: {x: 409, y: -166}
   m_SizeDelta: {x: 987.514, y: 70.54297}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1361835931
@@ -9248,7 +9264,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 479, y: -140}
+  m_AnchoredPosition: {x: 409, y: -166}
   m_SizeDelta: {x: 987.514, y: 70.54297}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1801883484
@@ -11663,6 +11679,22 @@ PrefabInstance:
     - target: {fileID: 3683583275290811637, guid: 8179f7343c097b74bada9b4f7336c0a2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5516226486218235928, guid: 8179f7343c097b74bada9b4f7336c0a2, type: 3}
+      propertyPath: m_Size.x
+      value: 0.3969915
+      objectReference: {fileID: 0}
+    - target: {fileID: 5516226486218235928, guid: 8179f7343c097b74bada9b4f7336c0a2, type: 3}
+      propertyPath: m_Size.y
+      value: 0.4972663
+      objectReference: {fileID: 0}
+    - target: {fileID: 5516226486218235928, guid: 8179f7343c097b74bada9b4f7336c0a2, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.04110366
+      objectReference: {fileID: 0}
+    - target: {fileID: 5516226486218235928, guid: 8179f7343c097b74bada9b4f7336c0a2, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.0018067658
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
