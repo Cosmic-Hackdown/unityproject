@@ -4517,9 +4517,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f8b662d0da37484f81f92fb10a45d39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  iFramesDuration: 2
-  numberOfFlashes: 3
   startingHealth: 3
+  iFramesDuration: 1
+  numberOfFlashes: 1
 --- !u!1 &1008487064
 GameObject:
   m_ObjectHideFlags: 0
