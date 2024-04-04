@@ -12,12 +12,12 @@ TagManager:
   - Ground
   - Water
   - UI
-  - player
   - Wall
   - 
   - 
   - 
-  - 
+  - Player
+  - Enemy
   - 
   - 
   - 
