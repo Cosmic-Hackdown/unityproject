@@ -86,7 +86,7 @@ public class Health : MonoBehaviour
             spriteRend.color = Color.white;
             //flash again this time with regular white color
            yield return new WaitForSeconds(iFramesDuration/(numberOfFlashes*2));
-            yield return new WaitForSeconds(1);
+            yield return new WaitForSeconds(0.3f);
 
         }
 
