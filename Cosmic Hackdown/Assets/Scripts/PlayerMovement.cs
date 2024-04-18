@@ -9,6 +9,7 @@ public class PlayerMovement : MonoBehaviour
     private Animator anim;
 
     private bool grounded;
+    private float horizontalInput;
 
     //SerializeField allows you to edit the speed directly from Unity
    [SerializeField] private float speed;
@@ -26,7 +27,7 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
-        float horizontalInput = Input.GetAxis("Horizontal");
+         horizontalInput = Input.GetAxis("Horizontal");
         /*Vector3 is a collection of numbers to assign speed in all 3 directions:
         1. left and right
         2. up and down
@@ -76,6 +77,10 @@ public class PlayerMovement : MonoBehaviour
         if(collision.gameObject.tag == "Ground") {
             grounded = true;
         }
+    }
+
+    public bool canAttack() {
+        return horizontalInput == 0 && grounded;
     }
 
     // Start is called before the first frame update
