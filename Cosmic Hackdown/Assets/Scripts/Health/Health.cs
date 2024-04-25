@@ -17,7 +17,8 @@ public class Health : MonoBehaviour
     //how many flashes you will see of invincibility after the player gets hurt
     [SerializeField] private int numberOfFlashes;
     private SpriteRenderer spriteRend;
-
+    
+    private AudioSource audioSource;
     
     public float currentHealth{ get; private set; }
 
@@ -32,6 +33,12 @@ public class Health : MonoBehaviour
         //grab reference for spriterenderer component
         spriteRend = GetComponent<SpriteRenderer>();
         
+        audioSource = GetComponent<AudioSource>();
+        if (audioSource == null)
+        {
+            Debug.LogError("AudioSource component not found!");
+        }
+        
     }
 
     public void TakeDamage(float _damage)
@@ -42,6 +49,7 @@ public class Health : MonoBehaviour
         This makes sure our current health never goes below 0 or above startingHealth
         */
         currentHealth = Mathf.Clamp(currentHealth-_damage, 0, startingHealth);
+        audioSource.Play(); // Play the audio
 
         if(currentHealth > 0) {
             //player hurt
