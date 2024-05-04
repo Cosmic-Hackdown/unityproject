@@ -14,12 +14,12 @@ public class PlayerAttack : MonoBehaviour
     private PlayerMovement playerMovement;
 
     // 
-  /*  private void Awake()
+    private void Awake()
     {
         anim = GetComponent<Animator>();
         playerMovement = GetComponent<PlayerMovement>();
     }
-*/
+
 
     // Update is called once per frame
     void Update()
