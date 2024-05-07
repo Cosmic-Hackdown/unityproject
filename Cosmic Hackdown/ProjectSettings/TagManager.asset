@@ -8,6 +8,7 @@ TagManager:
   - Key
   - Enemy
   - bullet
+  - kill
   layers:
   - Default
   - TransparentFX
