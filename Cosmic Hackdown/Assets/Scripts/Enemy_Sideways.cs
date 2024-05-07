@@ -12,6 +12,7 @@ public class NewBehaviourScript : MonoBehaviour
     private bool movingLeft;
     private float leftEdge;
     private float rightEdge;
+    public AudioSource laserSound;
 
     private void Awake() {
         leftEdge = transform.position.x - movementDistance;
@@ -54,6 +55,9 @@ public class NewBehaviourScript : MonoBehaviour
             //reduce player health by enemy damage
             collision.GetComponent<Health>().TakeDamage(damage);
 
+        }
+        if(collision.tag == "bullet") {
+            laserSound.Play();
         }
     }
     
