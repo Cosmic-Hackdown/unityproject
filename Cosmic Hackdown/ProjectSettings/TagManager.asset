@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Ground
   - Key
+  - Enemy
+  - bullet
+  - kill
   layers:
   - Default
   - TransparentFX
