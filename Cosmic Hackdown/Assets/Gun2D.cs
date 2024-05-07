@@ -19,7 +19,7 @@ public class Gun2D : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.M)) {
             var bullet = Instantiate(bulletPrefab, bulletSpawnPoint.position, bulletSpawnPoint.rotation);
-            bullet.GetComponent<Rigidbody2D>().velocity = bulletSpawnPoint.up*bulletSpeed;
+            bullet.GetComponent<Rigidbody2D>().velocity = bulletSpawnPoint.right*bulletSpeed;
         }
         
     }
