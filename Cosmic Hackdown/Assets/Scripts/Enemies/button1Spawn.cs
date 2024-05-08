@@ -18,7 +18,7 @@ public class button1Spawn : MonoBehaviour
 
     void Update() {
         if (counterlaser == 1) {
-            gameObject.transform.position = new Vector2(5, 3);
+            gameObject.transform.position = new Vector2(-4, 4);
         } else if(counterlaser == 2) {
             Destroy(gameObject);
             Destroy(destroyerProtector);
