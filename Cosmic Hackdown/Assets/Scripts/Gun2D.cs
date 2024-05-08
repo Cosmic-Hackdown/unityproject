@@ -10,6 +10,9 @@ public class Gun2D : MonoBehaviour
     //false if kill command item not collected.  if collected, switches to true
     public bool killCollected = false;
 
+    //sound that plays when you shoot your bullets witk kill()
+    public AudioSource killSound;
+
     // Start is called before the first frame update
   /*  void Start()
     {
@@ -24,6 +27,7 @@ public class Gun2D : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.M) && killCollected) {
             var bullet = Instantiate(bulletPrefab, bulletSpawnPoint.position, bulletSpawnPoint.rotation);
             bullet.GetComponent<Rigidbody2D>().velocity = bulletSpawnPoint.right*bulletSpeed;
+            killSound.Play();
         }
         
     }
