@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class button1Spawn : MonoBehaviour
 {
-    public counter = 0;
+    public int counter = 0;
     public GameObject enemy;
     public Transform Button1;
     // Start is called before the first frame update
