@@ -8,6 +8,8 @@ public class button1Spawn : MonoBehaviour
     public GameObject laser;
  //   public GameObject button2;
     public Transform Button1;
+
+  public GameObject destroyerProtector;
     // Start is called before the first frame update
     /*void Start()
     {
@@ -19,6 +21,7 @@ public class button1Spawn : MonoBehaviour
             gameObject.transform.position = new Vector2(5, 3);
         } else if(counterlaser == 2) {
             Destroy(gameObject);
+            Destroy(destroyerProtector);
         }
 
     }
