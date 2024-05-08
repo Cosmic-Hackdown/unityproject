@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class button1Spawn : MonoBehaviour
 {
-    public int counter = 0;
-    public GameObject enemy;
+    public int counterlaser = 0;
+    public GameObject laser;
     public Transform Button1;
     // Start is called before the first frame update
     /*void Start()
@@ -14,11 +14,11 @@ public class button1Spawn : MonoBehaviour
     }*/
 
     // Update is called once per frame
-    void Update()
-    {
-        if(Input.GetKeyDown(KeyCode.N)) {
-            var bullet = Instantiate(enemy, Button1.position, Button1.rotation);
-            counter++;
+   private void OnTriggerEnter2D(Collider2D other) {
+        if(other.gameObject.CompareTag("bullet")) {
+            var newLaser = Instantiate(laser, Button1.position, Button1.rotation);
+           // Destroy(gameObject);
+            counterlaser++;
         }
     }
 }

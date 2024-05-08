@@ -1577,8 +1577,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3d6bbaaec646044baeb637e4f5ecd04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  counter: 0
-  enemy: {fileID: 1301724719}
+  counterlaser: 0
+  laser: {fileID: 209922789509217981}
   Button1: {fileID: 341886170}
 --- !u!1 &380684169
 GameObject:
@@ -7478,11 +7478,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &1301724719 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7749427370601652523, guid: b3bb1b29b56d91947ad9846cbc7c6c75, type: 3}
-  m_PrefabInstance: {fileID: 1486521096897361693}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1320050852
 GameObject:
   m_ObjectHideFlags: 0
@@ -9210,7 +9205,19 @@ PrefabInstance:
     - target: {fileID: 730659448681149271, guid: 03ee55dbce49fdc42b487efe3c4b6344, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: aa08b0d3c4122f547881d78e22e9eca9, type: 3}
+      objectReference: {fileID: 21300000, guid: 71a089c0a5e90214eac5221464ad35f5, type: 3}
+    - target: {fileID: 730659448681149271, guid: 03ee55dbce49fdc42b487efe3c4b6344, type: 3}
+      propertyPath: m_Color.b
+      value: 0.14489143
+      objectReference: {fileID: 0}
+    - target: {fileID: 730659448681149271, guid: 03ee55dbce49fdc42b487efe3c4b6344, type: 3}
+      propertyPath: m_Color.g
+      value: 0.14489143
+      objectReference: {fileID: 0}
+    - target: {fileID: 730659448681149271, guid: 03ee55dbce49fdc42b487efe3c4b6344, type: 3}
+      propertyPath: m_Color.r
+      value: 0.9308176
+      objectReference: {fileID: 0}
     - target: {fileID: 930942150009807414, guid: 03ee55dbce49fdc42b487efe3c4b6344, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
       value: 1.28
@@ -12905,6 +12912,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 113ef96ab4e9e554ea30340c0c18ba7c, type: 3}
+--- !u!1 &209922789509217981 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2742653783405678249, guid: 113ef96ab4e9e554ea30340c0c18ba7c, type: 3}
+  m_PrefabInstance: {fileID: 209922789509217980}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1486521096897361693
 PrefabInstance:
   m_ObjectHideFlags: 0
