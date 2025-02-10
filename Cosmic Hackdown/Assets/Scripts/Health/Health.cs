@@ -20,6 +20,10 @@ public class Health : MonoBehaviour
 
     private AudioSource audioSource;
 
+    /*
+    get and private set are access modifiers, meaning you can get them from any other script.
+    This is especially helpful if your variable is set to private. 
+    */
     public float currentHealth { get; private set; }
 
     private Animator anim;

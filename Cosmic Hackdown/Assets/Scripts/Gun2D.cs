@@ -13,11 +13,7 @@ public class Gun2D : MonoBehaviour
     //sound that plays when you shoot your bullets witk kill()
     public AudioSource killSound;
 
-    // Start is called before the first frame update
-    /*  void Start()
-      {
-
-      }*/
+    
 
     // Update is called once per frame
     void Update()
