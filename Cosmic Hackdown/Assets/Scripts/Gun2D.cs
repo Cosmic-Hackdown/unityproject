@@ -14,27 +14,30 @@ public class Gun2D : MonoBehaviour
     public AudioSource killSound;
 
     // Start is called before the first frame update
-  /*  void Start()
-    {
-        
-    }*/
+    /*  void Start()
+      {
+
+      }*/
 
     // Update is called once per frame
     void Update()
     {
 
         //press m to shoot kill command.  can only do so if kill command item has been collected
-        if(Input.GetKeyDown(KeyCode.M) && killCollected) {
+        if (Input.GetKeyDown(KeyCode.M) && killCollected)
+        {
             var bullet = Instantiate(bulletPrefab, bulletSpawnPoint.position, bulletSpawnPoint.rotation);
-            bullet.GetComponent<Rigidbody2D>().velocity = bulletSpawnPoint.right*bulletSpeed;
+            bullet.GetComponent<Rigidbody2D>().velocity = bulletSpawnPoint.right * bulletSpeed;
             killSound.Play();
         }
-        
+
     }
 
     //if kill command item is collected, you gain the ability to shoot it at enemies
-    private void OnTriggerEnter2D(Collider2D other) {
-        if(other.gameObject.CompareTag("kill")) {
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("kill"))
+        {
             Destroy(other.gameObject);
             killCollected = true;
         }

@@ -4,34 +4,33 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-   public float life = 3;
-   public AudioSource laserSound;
-   public AudioSource destroyerDestroyed;
+  //life is the amount of time delayed before destroying the object (in this case, the enemy or obstacle)
+  public float life = 3;
+  public AudioSource laserSound;
+  public AudioSource destroyerDestroyed;
 
-   void Awake() {
+  void Awake()
+  {
     Destroy(gameObject, life);
-   }
+  }
 
-  /* void OnCollisionEnter2D(Collision2D collision) {
-    if(collision.gameObject.CompareTag("Enemy")){
-    Destroy(collision.gameObject);
-    }
-    Destroy(gameObject);
-   }
-*/
-    void OnTriggerEnter2D(Collider2D other) {
-    if(other.gameObject.CompareTag("Enemy")){
+
+  void OnTriggerEnter2D(Collider2D other)
+  {
+    if (other.gameObject.CompareTag("Enemy"))
+    {
       destroyerDestroyed.Play();
-    Destroy(other.gameObject);
-    
+      Destroy(other.gameObject);
+
     }
-     if(other.gameObject.CompareTag("destroyer")){
+    if (other.gameObject.CompareTag("destroyer"))
+    {
       laserSound.Play();
-    Destroy(other.gameObject);
-    
+      Destroy(other.gameObject);
+
     }
 
     Destroy(gameObject);
-   }
+  }
 
 }

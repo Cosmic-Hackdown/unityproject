@@ -11,10 +11,11 @@ public class PlayerMovement : MonoBehaviour
     private bool grounded;
 
     //SerializeField allows you to edit the speed directly from Unity
-   [SerializeField] private float speed;
+    [SerializeField] private float speed;
 
     //called every time you start the game aka script being loaded
-    private void Awake() {
+    private void Awake()
+    {
         //checks player object for type rigidbody2d.
         //player has type rigidbody2d as you can see in its inspector so it will take its rigidbody2d
         //and store into the body variable
@@ -38,7 +39,7 @@ public class PlayerMovement : MonoBehaviour
 
         body.velocity.y means you don't want to change value on the y axis. 
         */
-        body.velocity = new Vector2(Input.GetAxis("Horizontal")*speed, body.velocity.y);
+        body.velocity = new Vector2(Input.GetAxis("Horizontal") * speed, body.velocity.y);
 
         /*
         This is to make your character JUMP
@@ -47,7 +48,8 @@ public class PlayerMovement : MonoBehaviour
         if space was pressed or not.  It also checks if it's grounded.
         character will only jump if it is on the ground, making it so you can't do infinite jumps.
         */
-        if(Input.GetKey(KeyCode.Space) && grounded) {
+        if (Input.GetKey(KeyCode.Space) && grounded)
+        {
             /*
             So if space bar is pressed, we do the following below:
             set the body's velocity to the speed variable and only update this for the y axis.
@@ -64,27 +66,21 @@ public class PlayerMovement : MonoBehaviour
         anim.SetBool("grounded", grounded);
     }
 
-    private void Jump() {
+    private void Jump()
+    {
 
-        body.velocity = new Vector2(body.velocity.x, speed*1.7f);
+        body.velocity = new Vector2(body.velocity.x, speed * 1.7f);
         grounded = false;
 
 
     }
 
-    private void OnCollisionEnter2D(Collision2D collision) {
-        if(collision.gameObject.tag == "Ground") {
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Ground")
+        {
             grounded = true;
         }
     }
-
-    // Start is called before the first frame update
-   /* void Start()
-    {
-        
-    }
-
-     */
-
 
 }
